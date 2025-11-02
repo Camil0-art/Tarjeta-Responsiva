@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+h1 {
+  background-color: #0056b3;
+  color: rgb(209, 48, 48);
+  padding: 20px;
+  margin: 0;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* Estilos de las tarjetas */
+.tarjeta {
+  background-color: rgb(69, 31, 206);
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta h2 {
+  color: #c4b81a;
+}
+
+.tarjeta p {
+  color: #c22e2e;
+  font-size: 15px;
+}
+
+/* Moviles */
+@media (max-width: 768px) {
+  .tarjetas {
+    flex-direction: column;  
+    align-items: center;
+  }
+
+  h1 {
+  background-color: #0056b3;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  margin: 0;
+}
+
+  .tarjeta {
+    width: 80%;  
+  }
+
+  .tarjeta h2 {
+  color: #c74e15;
+}
+
+.tarjeta p {
+  color: #22ad4c;
+  font-size: 15px;
+}
+}
