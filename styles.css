@@ -19,6 +19,12 @@ h1 {
   padding: 30px;
 }
 
+p{
+    background-color: aqua;
+    color: #c22e2e;
+    border-radius: 50px;
+}
+
 /* Estilos de las tarjetas */
 .tarjeta {
   background-color: rgb(69, 31, 206);
@@ -68,4 +74,22 @@ h1 {
   color: #22ad4c;
   font-size: 15px;
 }
+}
+
+@media print {
+  body {
+    background-color: white;   
+    color: black;              
+  }
+
+  h1 {
+    background: none;          
+    color: rgb(25, 143, 223);
+    border-bottom: 1px solid #52aa29;
+  }
+
+  .tarjeta {
+    box-shadow: none;          
+    border: 1px solid #5a1b1b;    
+  }
 }
